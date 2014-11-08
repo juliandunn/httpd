@@ -19,7 +19,7 @@ suites:
   #
   - name: server22-default
     run_list:
-    - recipe[httpd_test_default::server]
+    - recipe[httpd_service::single]
     includes: [
       'amazon-2014.03',
       'debian-7.2',
@@ -40,7 +40,7 @@ suites:
   #
   - name: server24-default
     run_list:
-    - recipe[httpd_test_default::server]
+    - recipe[httpd_service::single]
     includes: [
       'amazon-2014.03',
       'fedora-20',
